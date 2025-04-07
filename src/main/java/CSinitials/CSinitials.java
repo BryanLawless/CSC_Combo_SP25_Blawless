@@ -59,7 +59,7 @@ public class CSinitials {
 
     public void setCredits(int credits) {
         this.credits = credits;
-    }
+    }	  
 
     @Override
     public String toString() {
