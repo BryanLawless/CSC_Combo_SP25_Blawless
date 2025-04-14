@@ -1,7 +1,6 @@
 package WarProject;
-
 public class Deck {
-	private final Card[] cards;
+	private Card[] cards;
 
 	public Deck() {
 		this.cards = new Card[52];
@@ -17,6 +16,15 @@ public class Deck {
 
 	public Deck(int n) {
 		this.cards = new Card[n];
+	}
+
+	public Deck subDeck(int low, int high) {
+		Deck sub = new Deck(high - low + 1);
+		for (int i = 0; i < sub.cards.length; i++) {
+			sub.cards[i] = this.cards[low + i];
+		}
+		
+		return sub;
 	}
 
 
