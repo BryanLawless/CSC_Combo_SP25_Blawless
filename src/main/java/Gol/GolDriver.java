@@ -4,8 +4,8 @@ import javax.swing.JFrame;
 
 public class GolDriver {
 	public static void main(String[] args) {
-		int rows = 15;
-		int cols = 30;
+		int rows = 30;
+		int cols = 45;
 		int size = 20;
 
 		String title = "Bryan's Game of Life";
@@ -20,5 +20,7 @@ public class GolDriver {
 		frame.add(game.getGrid());
 		frame.pack();
 		frame.setVisible(true);
+
+		game.mainLoop();
 	}
 }

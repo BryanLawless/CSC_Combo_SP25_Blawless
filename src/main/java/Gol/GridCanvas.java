@@ -49,4 +49,12 @@ public class GridCanvas extends Canvas {
 	public void turnOff(int row, int col) {
 		this.cells[row][col].turnOff();
 	}
+
+	public int test(int row, int col) {
+		try {
+			if (this.cells[row][col].isOn()) return 1;
+		} catch (ArrayIndexOutOfBoundsException e) {}
+
+		return 0;
+	}
 }
