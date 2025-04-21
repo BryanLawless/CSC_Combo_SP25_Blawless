@@ -15,6 +15,8 @@ public class WarDriver {
 			Card c1 = p1.popCard();
 			Card c2 = p2.popCard();
 
+			System.out.println(c1 + " - " + c2);
+
 			int diff = c1.getRank() - c2.getRank();
 			
 			if (diff > 0) {
